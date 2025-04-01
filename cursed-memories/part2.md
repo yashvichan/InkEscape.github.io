@@ -213,3 +213,4 @@ the curse could be connected to a place so steeped in tragedy sent shivers down 
 Shin glanced at Ema, determination flickering in his eyes. “We have to go there tomorrow. We can’t 
 let fear hold us back. We need to find out what really happened.” 
 Everyone agreed.  
+[Continue to Part 3](cursed-memories/part3.md)
