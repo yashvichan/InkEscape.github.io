@@ -15,3 +15,18 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+// Markdown Loader
+document.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+    const part = params.get("part");
+
+    if (part) {
+        fetch(`cursed-memories/${part}.md`)
+            .then(response => response.text())
+            .then(markdown => {
+                document.getElementById("markdown-content").innerHTML = marked.parse(markdown);
+            })
+            .catch(error => console.error("Error loading Markdown file:", error));
+    }
+});
