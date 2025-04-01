@@ -12,12 +12,15 @@ body {
     line-height: 1.6;
     padding: 0;
     margin: 0;
+    background-image: url('dark-background.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
 }
 
 /* Header Styling */
 header {
-    background: #1d1d1d;
-    color: #e0e0e0;
+    background: rgba(0, 0, 0, 0.7); /* Slight transparency to allow background image to show through */
+    color: #fff;
     padding: 100px 20px;
     text-align: center;
     border-radius: 10px;
@@ -86,6 +89,13 @@ header p {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
 }
 
+.story-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
 .story-card h3 {
     font-size: 1.7rem;
     margin-bottom: 10px;
@@ -105,7 +115,7 @@ footer {
     font-size: 1rem;
     color: #aaa;
     padding: 20px;
-    background: #1d1d1d;
+    background: rgba(0, 0, 0, 0.8);
     border-top: 1px solid #444;
 }
 
