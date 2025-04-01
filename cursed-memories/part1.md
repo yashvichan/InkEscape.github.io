@@ -211,3 +211,4 @@ By morning, the news spread like wildfire throughout the school: Airi and her fa
 tragic accident. Whispers filled the hallways, rumours swirling with a chilling intensity. 
 “They say she was trying to escape the curse,” one student muttered. 
 “But no one can escape it… it doesn’t let you leave,” another replied, shivering. 
+[Continue to Part 2](cursed-memories/part2.md)
