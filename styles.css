@@ -1,142 +1,124 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Basic Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #0f0f0f;
-    color: #e0e0e0;
-    line-height: 1.6;
-    padding: 0;
+    font-family: Arial, sans-serif;
     margin: 0;
-    background-image: url('dark-background.jpg'); /* Add your background image */
-    background-size: cover;
-    background-position: center;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #e5e5e5;
 }
 
 /* Header Styling */
 header {
-    background: rgba(0, 0, 0, 0.7); /* Slight transparency to allow background image to show through */
-    color: #fff;
-    padding: 100px 20px;
+    background-color: #333;
+    padding: 20px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
-    border: 1px solid #333;
 }
 
 header h1 {
-    font-size: 4rem;
-    letter-spacing: 5px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
 }
 
 header p {
-    font-size: 1.3rem;
     color: #aaa;
-}
-
-/* Intro Section */
-.intro {
-    text-align: center;
-    margin-top: 40px;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-}
-
-.intro h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #fff;
-    font-weight: bold;
-}
-
-.intro p {
     font-size: 1.2rem;
-    color: #bbb;
 }
 
-/* Featured Stories Section */
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Featured Stories */
 .featured {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 60px;
+    gap: 20px;
 }
 
+/* Story Card */
 .story-card {
-    background-color: rgba(255, 255, 255, 0.15);
-    color: #fff;
-    border-radius: 15px;
-    padding: 25px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.8);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #444;
+    background-color: #444;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
 }
 
 .story-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
 }
 
 .story-img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    height: 200px;
+    object-fit: cover;
 }
 
-.story-card h3 {
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.story-card p {
-    color: #bbb;
-    font-size: 1rem;
-}
-
-/* Footer Section */
-footer {
+h3 {
     text-align: center;
-    margin-top: 50px;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 15px;
     font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+    background-color: #777;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
     color: #aaa;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    border-top: 1px solid #444;
-}
-
-/* FadeIn Animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .featured {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .story-card {
-        width: 90%;
-    }
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
